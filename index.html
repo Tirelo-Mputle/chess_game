@@ -1,11 +1,12 @@
-<!DOCTYPE html>
+</head><!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>chessMoves</title>
-  <link href="chessTest.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/scripts.js"></script>
 </head>
 <body>
   <h1>Chess</h1>
@@ -46,32 +47,6 @@
     <div class="container" data-king><img src="pieces/king.png" alt="king"></div>
   </div>
 
-  <script>
-    const cells = document.querySelectorAll('td');
-    const piecesContainer = document.getElementById('pieces-container');
-
-    piecesContainer.addEventListener('click', (event) => {
-      const piece = event.target.closest('.container');
-      if (!piece) return;
-
-      const selectedPiece = document.querySelector('.selected-piece');
-      if (selectedPiece) {
-        selectedPiece.classList.remove('selected-piece');
-      }
-      piece.classList.add('selected-piece');
-    });
-
-    cells.forEach(cell => {
-      cell.addEventListener('click', () => {
-        const selectedPiece = document.querySelector('.selected-piece');
-        if (selectedPiece && cell.innerHTML === '') {
-          cell.appendChild(selectedPiece);
-          selectedPiece.classList.remove('selected-piece');
-        }
-      });
-    });
-
-    
-  </script>
 </body>
 </html>
+
