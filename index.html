@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>chessMoves</title>
+  <link href="chessTest.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <h1>Chess</h1>
+  <table>
+    <tr>
+      <td id="cell1"></td>
+      <td id="cell2"></td>
+      <td id="cell3"></td>
+      <td id="cell4"></td>
+    </tr>
+  
+    <tr>
+      <td id="cell5"></td>
+      <td id="cell6"></td>
+      <td id="cell7"></td>
+      <td id="cell8"></td>
+    </tr>
+  
+    <tr>
+      <td id="cell9"></td>
+      <td id="cell10"></td>
+      <td id="cell11"></td>
+      <td id="cell12"></td>
+    </tr>
+  
+    <tr>
+      <td id="cell13"></td>
+      <td id="cell14"></td>
+      <td id="cell15"></td>
+      <td id="cell16"></td>
+    </tr>
+  </table>
+
+  <div id="pieces-container">
+    <div draggable = true class="container" data-pawn-1><img src="pieces/pawn.png" alt="pawn"></div>
+    <div class="container" data-pawn-2><img src="pieces/pawn.png" alt="pawn"></div>
+    <div class="container" data-rook-left><img src="pieces/rook.png" alt="rook"></div>
+    <div class="container" data-king><img src="pieces/king.png" alt="king"></div>
+  </div>
+
+  <script>
+    const cells = document.querySelectorAll('td');
+    const piecesContainer = document.getElementById('pieces-container');
+
+    piecesContainer.addEventListener('click', (event) => {
+      const piece = event.target.closest('.container');
+      if (!piece) return;
+
+      const selectedPiece = document.querySelector('.selected-piece');
+      if (selectedPiece) {
+        selectedPiece.classList.remove('selected-piece');
+      }
+      piece.classList.add('selected-piece');
+    });
+
+    cells.forEach(cell => {
+      cell.addEventListener('click', () => {
+        const selectedPiece = document.querySelector('.selected-piece');
+        if (selectedPiece && cell.innerHTML === '') {
+          cell.appendChild(selectedPiece);
+          selectedPiece.classList.remove('selected-piece');
+        }
+      });
+    });
+
+    
+  </script>
+</body>
+</html>
