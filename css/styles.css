@@ -1,0 +1,30 @@
+.container {
+    position: relative;
+  }
+
+.container div {
+    position: absolute;
+    z-index: 2;
+  }
+
+.selected-piece {
+    border: 1px dotted red;
+    z-index: 3;
+  }
+
+img {
+    height: 60px;
+}
+
+table {
+    border-collapse: collapse;
+  }
+
+
+td {
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+  }
+
