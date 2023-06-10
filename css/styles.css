@@ -1,4 +1,4 @@
-.container {
+/* .container {
     position: relative;
   }
 
@@ -27,4 +27,86 @@ td {
     width: 50px;
     text-align: center;
   }
+ */
 
+
+ *{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #ddd;
+}
+.container{
+    width: 600px;
+    margin: auto;
+    position: relative;
+}
+#board{
+	width: 600px;
+	height: 600px;
+	border:3px #333 solid;
+}
+/* For the boxes inside the board */
+#board div div{
+	float: left;
+	width: 75px;
+	height: 75px;
+	box-sizing:border-box;
+	border: #000 solid .01cm;
+}
+#board .even div:nth-child(even){
+	background: rgb(210, 133, 71);
+}
+
+#board .even div:nth-child(odd){
+	background: rgb(255, 252, 252);/*621700*/
+}
+
+#board .odd div:nth-child(even){
+	background: rgb(255, 252, 252);/*621700*/
+}
+
+#board .odd div:nth-child(odd){
+	background: rgb(210, 133, 71);
+}
+
+
+img{
+	width: 75px;
+	height: 75px; 
+}
+
+
+#turn{
+	text-align: center;
+	font-size: 18px;
+}
+
+
+/* #sematary img{
+	transform: rotateZ(0);
+}
+#whiteSematary{
+	position: absolute;
+    top: 0;
+    left: 610px;
+    width: 180px;
+}
+#blackSematary{
+	position: absolute;
+    top: 0;
+    left: -190px;
+    width: 180px;
+}
+#blackSematary div{
+	overflow-y: auto;
+	margin-bottom: 2px;
+}
+#blackSematary img{
+	float: right;
+}
+#sematary img{
+	width: 60px;
+	height: 60px;
+} */ 
