@@ -9,6 +9,8 @@
   <script src="js/scripts.js"></script>
 </head>
 <body>
+
+  <!-- Neo's first code: -->
   <!-- <h1>Chess</h1>
   <table>
     <tr>
@@ -46,10 +48,12 @@
     <div class="container" data-rook-left><img src="pieces/rook.png" alt="rook"></div>
     <div class="container" data-king><img src="pieces/king.png" alt="king"></div>
   </div> -->
+<!-- The end of Neo's code -->
 
 
   <div class="container">
     <div id="board">
+<!--Responsible for the top black row pieces  -->
         <div id="final" class="odd">
             <div id="81" class="square" data-square="8-a">
                 <img class="piece rook" id="blackRook1" src="img/blackRook.png">
@@ -76,6 +80,8 @@
                 <img class="piece rook" id="blackRook2" src="img/blackRook.png">
             </div>
         </div>
+
+<!--Responsible for the top 2nd black row pieces and squares-->        
         <div class="even">
             <div id="71" class="square" data-square="7-a">
                 <img class="piece pawn" id="blackPawn1" src="img/blackPawn.png">
@@ -102,6 +108,8 @@
                 <img class="piece pawn" id="blackPawn8" src="img/blackPawn.png">
             </div>
         </div>
+
+<!--Responsible for the middle squares/blocks  -->        
         <div class="odd">
             <div id="61" class="square" data-square="6-a"></div>
             <div id="62" class="square" data-square="6-b"></div>
@@ -142,6 +150,8 @@
             <div id="37" class="square" data-square="3-g"></div>
             <div id="38" class="square" data-square="3-h"></div>
         </div>
+
+<!--Responsible for the bottom white row pawn pieces  -->        
         <div class="odd">
             <div class="square white" id="21" data-square="2-a">
                 <img class="piece pawn" id="whitePawn1" src="img/whitePawn.png">
@@ -168,6 +178,8 @@
                 <img class="piece pawn" id="whitePawn8" src="img/whitePawn.png">
             </div>
         </div>
+
+<!--Responsible for the bottom black row pieces  -->        
         <div class="even">
             <div id="11" class="square white" data-square="1-a">
                 <img class="piece rook" id="whiteRook1" src="img/whiteRook.png">
@@ -195,6 +207,7 @@
             </div>
         </div>
 
+<!-- Where pieces go when they're won -->
         <!-- <div id="sematary">
             <div id="whiteSematary">
                 <div class="pawn"></div>
@@ -214,6 +227,8 @@
 
     </div>
 </div>
+
+<!-- Notifies the player on whose turn is it -->
 <p id="turn">White's Turn</p>
 
 

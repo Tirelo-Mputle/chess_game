@@ -1,3 +1,4 @@
+// Neo's code:
 // const cells = document.querySelectorAll('td');
 // const piecesContainer = document.getElementById('pieces-container');
 
