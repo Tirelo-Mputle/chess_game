@@ -6,106 +6,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>chessMoves</title>
   <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/scripts.js"></script>
+  <script src="./js/scripts.js" defer></script>
 </head>
 <body>
-
-  <!-- Neo's first code: -->
-  <!-- <h1>Chess</h1>
-  <table>
-    <tr>
-      <td id="cell1"></td>
-      <td id="cell2"></td>
-      <td id="cell3"></td>
-      <td id="cell4"></td>
-    </tr>
-  
-    <tr>
-      <td id="cell5"></td>
-      <td id="cell6"></td>
-      <td id="cell7"></td>
-      <td id="cell8"></td>
-    </tr>
-  
-    <tr>
-      <td id="cell9"></td>
-      <td id="cell10"></td>
-      <td id="cell11"></td>
-      <td id="cell12"></td>
-    </tr>
-  
-    <tr>
-      <td id="cell13"></td>
-      <td id="cell14"></td>
-      <td id="cell15"></td>
-      <td id="cell16"></td>
-    </tr>
-  </table>
-
-  <div id="pieces-container">
-    <div draggable = true class="container" data-pawn-1><img src="pieces/pawn.png" alt="pawn"></div>
-    <div class="container" data-pawn-2><img src="pieces/pawn.png" alt="pawn"></div>
-    <div class="container" data-rook-left><img src="pieces/rook.png" alt="rook"></div>
-    <div class="container" data-king><img src="pieces/king.png" alt="king"></div>
-  </div> -->
-<!-- The end of Neo's code -->
-
 
   <div class="container">
     <div id="board">
 <!--Responsible for the top black row pieces  -->
         <div id="final" class="odd">
             <div id="81" class="square" data-square="8-a">
-                <img class="piece rook" id="blackRook1" src="img/blackRook.png">
+                <img data-pieces class="piece rook" id="blackRook1" src="img/blackRook.png">
             </div>
             <div id="82" class="square" data-square="8-b">
-                <img class="piece knight" id="blackKnight1" src="img/blackKnight.png">
+                <img data-pieces class="piece knight" id="blackKnight1" src="img/blackKnight.png">
             </div>
             <div id="83" class="square" data-square="8-c">
-                <img class="piece bishop" id="blackBishop1" data-color="black" src="img/blackBishop.png">
+                <img data-pieces class="piece bishop" id="blackBishop1" data-color="black" src="img/blackBishop.png">
             </div>
             <div id="84" class="square" data-square="8-d">
-                <img class="piece bking" id="blackQueen" data-color="black" src="img/blackQueen.png">
+                <img data-pieces class="piece bking" id="blackQueen" data-color="black" src="img/blackQueen.png">
             </div>
             <div id="85" class="square" data-square="8-e">
-                <img class="piece bking" id="blackKing" data-color="black" src="img/blackKing.png">
+                <img data-pieces class="piece bking" id="blackKing" data-color="black" src="img/blackKing.png">
             </div>
             <div id="86" class="square" data-square="8-f">
-                <img class="piece bishop" id="blackBishop2" data-color="black" src="img/blackBishop.png">
+                <img data-pieces class="piece bishop" id="blackBishop2" data-color="black" src="img/blackBishop.png">
             </div>
             <div id="87" class="square" data-square="8-g">
-                <img class="piece bking" id="blackKnight2" data-color="black" src="img/blackKnight.png">
+                <img data-pieces class="piece bking" id="blackKnight2" data-color="black" src="img/blackKnight.png">
             </div>
             <div id="88" class="square" data-square="8-h">
-                <img class="piece rook" id="blackRook2" src="img/blackRook.png">
+                <img data-pieces class="piece rook" id="blackRook2" src="img/blackRook.png">
             </div>
         </div>
 
 <!--Responsible for the top 2nd black row pieces and squares-->        
         <div class="even">
             <div id="71" class="square" data-square="7-a">
-                <img class="piece pawn" id="blackPawn1" src="img/blackPawn.png">
+                <img data-pieces class="piece pawn" id="blackPawn1" src="img/blackPawn.png">
             </div>
             <div id="72" class="square" data-square="7-b">
-                <img class="piece pawn" id="blackPawn2" src="img/blackPawn.png">
+                <img data-pieces class="piece pawn" id="blackPawn2" src="img/blackPawn.png">
             </div>
             <div id="73" class="square" data-square="7-c">
-                <img class="piece pawn" id="blackPawn3" src="img/blackPawn.png">
+                <img data-pieces class="piece pawn" id="blackPawn3" src="img/blackPawn.png">
             </div>
             <div id="74" class="square" data-square="7-d">
-                <img class="piece pawn" id="blackPawn4" src="img/blackPawn.png">
+                <img data-pieces class="piece pawn" id="blackPawn4" src="img/blackPawn.png">
             </div>
             <div id="75" class="square" data-square="7-e">
-                <img class="piece pawn" id="blackPawn5" src="img/blackPawn.png">
+                <img data-pieces class="piece pawn" id="blackPawn5" src="img/blackPawn.png">
             </div>
             <div id="76" class="square" data-square="7-f">
-                <img class="piece pawn" id="blackPawn6" src="img/blackPawn.png">
+                <img data-pieces class="piece pawn" id="blackPawn6" src="img/blackPawn.png">
             </div>
             <div id="77" class="square" data-square="7-g">
-                <img class="piece pawn" id="blackPawn7" src="img/blackPawn.png">
+                <img data-pieces class="piece pawn" id="blackPawn7" src="img/blackPawn.png">
             </div>
             <div id="78" class="square" data-square="7-h">
-                <img class="piece pawn" id="blackPawn8" src="img/blackPawn.png">
+                <img data-pieces class="piece pawn" id="blackPawn8" src="img/blackPawn.png">
             </div>
         </div>
 
@@ -154,84 +113,64 @@
 <!--Responsible for the bottom white row pawn pieces  -->        
         <div class="odd">
             <div class="square white" id="21" data-square="2-a">
-                <img class="piece pawn" id="whitePawn1" src="img/whitePawn.png">
+                <img data-pieces class="piece pawn" id="whitePawn1" src="img/whitePawn.png">
             </div>
             <div class="square white" id="22" data-square="2-b">
-                <img class="piece pawn" id="whitePawn2" src="img/whitePawn.png">
+                <img data-pieces class="piece pawn" id="whitePawn2" src="img/whitePawn.png">
             </div>
             <div class="square white" id="23" data-square="2-c">
-                <img class="piece pawn" id="whitePawn3" src="img/whitePawn.png">
+                <img data-pieces class="piece pawn" id="whitePawn3" src="img/whitePawn.png">
             </div>
             <div class="square white" id="24" data-square="2-d">
-                <img class="piece pawn" id="whitePawn4" src="img/whitePawn.png">
+                <img data-pieces class="piece pawn" id="whitePawn4" src="img/whitePawn.png">
             </div>
             <div class="square white" id="25" class="square" data-square="2-e">
-                <img class="piece pawn" id="whitePawn5" src="img/whitePawn.png">
+                <img data-pieces class="piece pawn" id="whitePawn5" src="img/whitePawn.png">
             </div>
             <div class="square white" id="26" data-square="2-f">
-                <img class="piece pawn" id="whitePawn6" src="img/whitePawn.png">
+                <img data-pieces class="piece pawn" id="whitePawn6" src="img/whitePawn.png">
             </div>
             <div class="square white" id="27" data-square="2-g">
-                <img class="piece pawn" id="whitePawn7" src="img/whitePawn.png">
+                <img data-pieces class="piece pawn" id="whitePawn7" src="img/whitePawn.png">
             </div>
             <div class="square white" id="28" data-square="2-h">
-                <img class="piece pawn" id="whitePawn8" src="img/whitePawn.png">
+                <img data-pieces class="piece pawn" id="whitePawn8" src="img/whitePawn.png">
             </div>
         </div>
 
 <!--Responsible for the bottom black row pieces  -->        
         <div class="even">
             <div id="11" class="square white" data-square="1-a">
-                <img class="piece rook" id="whiteRook1" src="img/whiteRook.png">
+                <img data-pieces class="piece rook" id="whiteRook1" src="img/whiteRook.png">
             </div>
             <div id="12" class="square white" data-square="1-b">
-                <img class="piece knight" id="whiteKnight1" src="img/whiteKnight.png">
+                <img data-pieces class="piece knight" id="whiteKnight1" src="img/whiteKnight.png">
             </div>
             <div id="13" class="square white" data-square="1-c">
-                <img class="piece bishop" id="whiteBishop1" data-color="white" src="img/whiteBishop.png">
+                <img data-pieces class="piece bishop" id="whiteBishop1" data-color="white" src="img/whiteBishop.png">
             </div>
             <div id="14" class="square white" data-square="1-d">
-                <img class="piece queen" id="whiteQueen" src="img/whiteQueen.png">
+                <img data-pieces class="piece queen" id="whiteQueen" src="img/whiteQueen.png">
             </div>
             <div id="15" class="square white" data-square="1-e">
-                <img class="piece wking" src="img/whiteKing.png" class="white" id="whiteKing">
+                <img data-pieces class="piece wking" src="img/whiteKing.png" class="white" id="whiteKing">
             </div>
             <div id="16" class="square white" data-square="1-f">
-                <img class="piece knight" id="whiteBishop2" src="img/whiteBishop.png">
+                <img data-pieces class="piece knight" id="whiteBishop2" src="img/whiteBishop.png">
             </div>
             <div id="17" class="square white" data-square="1-g">
-                <img class="piece knight" id="whiteKnight2" src="img/whiteKnight.png">
+                <img data-pieces class="piece knight" id="whiteKnight2" src="img/whiteKnight.png">
             </div>
             <div id="18" class="square white" data-square="1-h">
-                <img class="piece rook" id="whiteRook2" src="img/whiteRook.png">
+                <img data-pieces class="piece rook" id="whiteRook2" src="img/whiteRook.png">
             </div>
         </div>
-
-<!-- Where pieces go when they're won -->
-        <!-- <div id="sematary">
-            <div id="whiteSematary">
-                <div class="pawn"></div>
-                <div class="knight"></div>
-                <div class="bishop"></div>
-                <div class="rook"></div>
-                <div class="queen"></div>
-            </div>
-            <div id="blackSematary">
-                <div class="pawn"></div>
-                <div class="knight"></div>
-                <div class="bishop"></div>
-                <div class="rook"></div>
-                <div class="queen"></div>
-            </div>
-        </div> -->
 
     </div>
 </div>
 
 <!-- Notifies the player on whose turn is it -->
 <p id="turn">White's Turn</p>
-
-
 
 </body>
 </html>
